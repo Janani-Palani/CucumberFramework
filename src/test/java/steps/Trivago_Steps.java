@@ -214,7 +214,7 @@ public void clickReserve() throws InterruptedException
 }
 	
 @Then("User should be able to view the screen requesting for details and close browser")
-public void printDeets() throws InterruptedException
+public void viewDeetsAndCloseBrowser() throws InterruptedException
 {
 	wait.until(ExpectedConditions.elementToBeClickable(driver.findElementByXPath("//strong[text()='Enter your details']")));
 	List<WebElement> eleHeader = driver.findElementsByXPath("//strong[text()='Enter your details']");
